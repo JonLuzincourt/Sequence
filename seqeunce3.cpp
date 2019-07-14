@@ -2,17 +2,7 @@
 #include <cassert>
 #include "sequence3.h"
 #include "node1.h"
-/*
-Invariant:
-1. The items in the sequence are stored in the private member variable of 
-   many_nodes.
-2. The items are put into linked lists. The list head pointer is called head_ptr 
-   and the list end pointer is tail_ptr. They both point to NULL when the 
-   sequence is empty.
-3. The current item is pointed towards the private member variable called cursor.
-   There is also the precusor which points to the previous node from cursor. If 
-   there is no current item then they are set to NULL.
-*/
+
 namespace main_savitch_5{
  
     sequence::sequence(){//Best Case: O(1) Worst Case: O(1) Average Case: O(1)
